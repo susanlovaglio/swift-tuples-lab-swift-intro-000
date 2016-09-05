@@ -17,10 +17,10 @@
 // write your code here
 
 
+var person: (String, Int)
 
-
-
-
+person.0 = "Susan"
+person.1 = 21
 
 
 /*: question2
@@ -29,7 +29,7 @@
 // write your code here
 
 
-
+print("\(person.0) is \(person.1) years old")
 
 
 
@@ -41,8 +41,7 @@
 // write your code here
 
 
-
-
+person.1 = person.1 + 1
 
 
 
@@ -53,22 +52,17 @@
 // write your code here
 
 
-
-
-
-
-
+print("Happy \(person.1) bithday, \(person.0)!")
 
 /*: question5
  ### 5. Create another person variable called `someone` using _named_ fields for the name and age.
  */
 // write your code here
 
+var someone:(name:String, age: Int)
 
-
-
-
-
+someone.name = "Ben"
+someone.age = 21
 
 
 /*: question6
@@ -76,7 +70,7 @@
  */
 // write your code here
 
-
+print("\(someone.name) is \(someone.age) years old")
 
 
 
@@ -87,10 +81,7 @@
  */
 // write your code here
 
-
-
-
-
+someone.age += 1
 
 
 /*:
@@ -99,20 +90,17 @@
 // write your code here
 
 
-
-
-
-
-
+print("Happy \(someone.age) birthday, \(someone.name)!")
 
 /*:
  ### 9. Create a _constant_ tuple called `human`, with named fields for `name` and `age`.
  */
 // write your code here
 
+let human: (name: String, age: Int)
 
-
-
+human.age = 12
+human.name = "eve"
 
 
 
@@ -121,7 +109,9 @@
  ### 10. Can you change `human`'s age? Why or why not?
  */
 
+//human.age = 21
 
+//no, because it's a let.
 
 
 
